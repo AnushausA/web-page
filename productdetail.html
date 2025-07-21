@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fragranzia | Autograph Eau De Parfum</title>
+  
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f8f9fb;
+    }
+
+    
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 14px 24px;
+      background: white;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #003049;
+    }
+
+    .nav-links a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #003049;
+      font-weight: 500;
+    }
+
+    header.banner {
+      background-color: #003049;
+      color: white;
+      padding: 10px;
+      text-align: center;
+      font-size: 15px;
+    }
+
+    
+    .product-container {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 1200px;
+      margin: 30px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 10px;
+    }
+
+    .product-images {
+      flex: 1;
+      padding: 10px;
+      text-align: center;
+    }
+
+    .product-images img {
+      max-width: 90%;
+      border-radius: 10px;
+    }
+
+    .product-details {
+      flex: 1;
+      padding: 10px 20px;
+    }
+
+    .product-details h2 {
+      margin-top: 0;
+    }
+
+    .rating {
+      font-size: 14px;
+      color: green;
+      margin: 5px 0;
+    }
+
+    .price {
+      font-size: 20px;
+      font-weight: bold;
+      margin: 10px 0;
+    }
+
+    .price .old-price {
+      text-decoration: line-through;
+      color: #888;
+      font-weight: normal;
+      margin-left: 10px;
+    }
+
+    .quantity {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin: 10px 0;
+    }
+
+    .quantity button {
+      width: 30px;
+      height: 30px;
+      font-size: 18px;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 10px;
+      margin: 20px 0;
+    }
+
+    .buttons button {
+      padding: 10px 20px;
+      background-color: #003049;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    .description {
+      margin: 20px 0;
+      color: #333;
+    }
+
+    .offers ul {
+      padding-left: 20px;
+      color: green;
+    }
+
+    .suggested {
+      max-width: 1200px;
+      margin: 30px auto;
+      padding: 10px;
+    }
+
+    .suggested h3 {
+      margin-bottom: 20px;
+    }
+
+    .suggested-products {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .suggested-item {
+      background: white;
+      padding: 10px;
+      border-radius: 10px;
+      text-align: center;
+      width: 200px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+    }
+
+    .suggested-item img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .suggested-item .name {
+      font-size: 14px;
+      margin: 5px 0;
+    }
+
+    .suggested-item .price {
+      font-weight: bold;
+    }
+
+    .suggested-item .old-price {
+      text-decoration: line-through;
+      color: #777;
+      font-size: 13px;
+    }
+
+    .suggested-item button {
+      background-color: #003049;
+      color: white;
+      padding: 8px 12px;
+      border: none;
+      margin-top: 10px;
+      border-radius: 5px;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #d3e8f1;
+      padding: 30px 20px;
+      font-size: 14px;
+      color: #003049;
+    }
+
+    footer .container {
+      max-width: 1200px;
+      margin: auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    footer .section {
+      margin: 10px 0;
+      min-width: 150px;
+    }
+
+    footer h4 {
+      margin-bottom: 10px;
+      font-size: 16px;
+    }
+
+    footer a {
+      display: block;
+      color: #003049;
+      text-decoration: none;
+      margin-bottom: 5px;
+    }
+
+    footer .bottom-bar {
+      text-align: center;
+      margin-top: 20px;
+      border-top: 1px solid #ccc;
+      padding-top: 10px;
+      font-size: 12px;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Top Navigation -->
+<nav>
+  <div class="logo">Fragranzia</div>
+  <div class="nav-links">
+    <a href="#">Home</a>
+    <a href="#">Products</a>
+    <a href="#">Gifting</a>
+    <a href="#">About</a>
+    <a href="#">Cart</a>
+    <a href="#">Login</a>
+  </div>
+</nav>
+
+<!-- Banner -->
+<header class="banner">
+  ENJOY FESTIVE DISCOUNTS! FREE SHIPPING ABOVE ₹999!
+</header>
+
+<!-- Product Details -->
+<div class="product-container">
+  <div class="product-images">
+    <img src="Screenshot 2025-07-09 175612.png" alt="Autograph Perfume">
+  </div>
+  <div class="product-details">
+    <h2>Autograph Eau De Parfum 100ml for Men</h2>
+    <div class="rating">⭐ 4.5 | 1,000 Ratings <span style="color:red">Hurry only few stocks left!</span></div>
+    <div class="price">₹899 <span class="old-price">₹2,290</span> <span style="color:green">61% off</span></div>
+    
+    <div class="quantity">
+      <span>Quantity:</span>
+      <button>-</button><span>1</span><button>+</button>
+    </div>
+
+    <div class="buttons">
+      <button>Purchase Now</button>
+      <button>Add to Cart</button>
+    </div>
+
+    <div class="description">
+      <strong>Description</strong><br />
+      This fragrance exudes a confident and enigmatic personality. Its composition features a top note of lemon and mandarin with a twist of apple that enhances the freshness.
+    </div>
+
+    <div class="offers">
+      <strong>Available Offers</strong>
+      <ul>
+        <li>Buy 2 get 1 free</li>
+        <li>Free shipping over ₹1399</li>
+        <li>15% off first order</li>
+        <li>Free tool case on order above ₹2000</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+<div class="suggested">
+  <h3>Suggested for you</h3>
+  <div class="suggested-products">
+    <div class="suggested-item">
+      <img src="Screenshot 2025-07-09 175751.png" alt="Autograph Oud">
+      <div class="name">Autograph Eau De Parfum 100ml</div>
+      <div class="price">₹999 <span class="old-price">₹2,241</span></div>
+      <button>Add to Cart</button>
+    </div>
+
+    <div class="suggested-item">
+      <img src="Screenshot 2025-07-09 175911.png" alt="Royal">
+      <div class="name">Royal Eau De Parfum 100ml</div>
+      <div class="price">₹650 <span class="old-price">₹1,480</span></div>
+      <button>Add to Cart</button>
+    </div>
+
+    <div class="suggested-item">
+      <img src="Screenshot 2025-07-09 180110.png" alt="Nereus">
+      <div class="name">Royal Eau De Parfum 100ml</div>
+      <div class="price">₹650 <span class="old-price">₹1,480</span></div>
+      <button>Add to Cart</button>
+    </div>
+  </div>
+</div>
+
+
+<footer>
+  <div class="container">
+    <div class="section">
+      <h4>Pages</h4>
+      <a href="#">Home</a>
+      <a href="#">Products</a>
+      <a href="#">Gifting</a>
+      <a href="#">About</a>
+      <a href="#">Profile</a>
+    </div>
+    <div class="section">
+      <h4>Quick Links</h4>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms and Conditions</a>
+      <a href="#">FAQs</a>
+      <a href="#">Customer Service</a>
+    </div>
+    <div class="section">
+      <h4>Contact</h4>
+      <p>fragrantianew@gmail.com</p>
+      <p>+91 9876543210</p>
+      <h4>Social Media</h4>
+      <i class="fab fa-instagram"></i>
+          <i class="fab fa-facebook"></i>
+          <i class="fab fa-x-twitter"></i>
+          <i class="fab fa-youtube"></i>
+          <i class="fab fa-linkedin"></i>
+    </div>
+  </div>
+  <div class="bottom-bar">
+    © 2024 Fragranzia Company. All rights reserved. | Privacy Statement | Terms of Use | Contact Us
+  </div>
+</footer>
+
+</body>
+</html>

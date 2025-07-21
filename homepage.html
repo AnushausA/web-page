@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fragranza</title>
+  <style>
+    * {
+      margin: 0; padding: 0; box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+    body {
+      line-height: 1.6;
+    }
+    header, footer {
+      background-color: #f0f8f8;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 30px;
+      background: white;
+      border-bottom: 1px solid #ddd;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+    nav ul li {
+      display: inline;
+    }
+    nav ul li a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+    .hero {
+      background: #e6f0ff;
+      text-align: center;
+      padding: 40px 20px;
+    }
+    .hero img {
+      width: 100%;
+      max-width: 800px;
+    }
+    .features, .categories, .collections, .offers {
+      padding: 30px 20px;
+    }
+    .features, .categories .icons, .collections .items, .offers .items {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .feature-box, .product-card, .category-icon {
+      border: 1px solid #ccc;
+      padding: 15px;
+      border-radius: 10px;
+      width: 200px;
+      text-align: center;
+      background: #fff;
+    }
+    .product-card img {
+      width: 100%;
+      border-radius: 10px;
+    }
+    .section-title {
+      text-align: center;
+      font-size: 22px;
+      margin-bottom: 20px;
+      font-weight: bold;
+    }
+    .quote {
+      text-align: center;
+      padding: 20px;
+      font-style: italic;
+      background-color: #fafafa;
+    }
+    .footer {
+      background: #d3e8e8;
+      padding: 30px 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      font-size: 14px;
+    }
+    .footer-column {
+      width: 200px;
+      margin: 10px;
+    }
+    .footer-column h4 {
+      margin-bottom: 10px;
+    }
+    .btn {
+      margin-top: 10px;
+      padding: 10px;
+      background-color: #003366;
+      color: white;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    .btn:hover {
+      background-color: #0055a5;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Fragranza</h1>
+  </header>
+
+  <nav>
+    <div><strong>Fragranza</strong></div>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Products</a></li>
+      <li><a href="#">Offers</a></li>
+      <li><a href="#">About</a></li>
+    </ul>
+  </nav>
+
+  <section class="hero">
+    <h2>Discover perfumes that celebrate individuality</h2>
+    <img src="Screenshot 2025-07-07 134838.png" alt="Perfume Banner">
+  </section>
+
+  <section class="features">
+    <div class="feature-box">
+      <h4>Unlock Exclusive Offers</h4>
+      <p>Discounts specially for you</p>
+    </div>
+    <div class="feature-box">
+      <h4>Gift & Scents</h4>
+      <p>Share fragrance love</p>
+    </div>
+    <div class="feature-box">
+      <h4>Luxury Scents</h4>
+      <p>Starting at ₹1,600</p>
+    </div>
+    <div class="feature-box">
+      <h4>Fast Delivery</h4>
+      <p>Within 2–3 days</p>
+    </div>
+    <div class="feature-box">
+      <h4>Secure Payments</h4>
+      <p>Pay securely online</p>
+    </div>
+    <div class="feature-box">
+      <h4>24/7 Support</h4>
+      <p>We’re here for you</p>
+    </div>
+  </section>
+
+  <section class="collections">
+    <h3 class="section-title">Featured Collections</h3>
+    <div class="items">
+      <div class="product-card">
+        <img src="Screenshot 2025-07-07 135453.png" alt="Autograph Perfume">
+        <p>Autograph Eau De Parfum 100ml</p>
+        <strong>₹650</strong>
+        <button class="btn">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="Screenshot 2025-07-07 135600.png" alt="Kyros Perfume">
+        <p>Kyros Eau De Parfum 100ml</p>
+        <strong>₹899</strong>
+        <button class="btn">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="quote">
+    <p>“It’s an art. A craft. A science. At Fragranza, we’re in the business of creating memories that last forever through our fragrances.”</p>
+  </section>
+
+  <section class="categories">
+    <h3 class="section-title">Explore Categories</h3>
+    <div class="icons">
+      <div class="category-icon">Eau De Parfum</div>
+      <div class="category-icon">Concentrated</div>
+      <div class="category-icon">Deodorants</div>
+      <div class="category-icon">Body Mist</div>
+      <div class="category-icon">Combo</div>
+    </div>
+  </section>
+
+  <section class="offers">
+    <h3 class="section-title">Offers Zone</h3>
+    <div class="items">
+      <div class="product-card">
+        <img src="Screenshot 2025-07-07 135806.png" alt="Royal Perfume">
+        <p>Royal Eau De Parfum 100ml</p>
+        <strong>₹650</strong>
+        <button class="btn">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="Screenshot 2025-07-07 135816.png" alt="Kyros Perfume">
+        <p>Kyros Eau De Parfum 100ml</p>
+        <strong>₹899</strong>
+        <button class="btn">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="hero">
+    <h2>Elegance in Every Bottle</h2>
+    <p>Discover timeless fragrances crafted for every moment</p>
+    <button class="btn">Shop Now</button>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-column">
+      <h4>Pages</h4>
+      <p>Home<br>Shop<br>About<br>Contact</p>
+    </div>
+    <div class="footer-column">
+      <h4>Quick Links</h4>
+      <p>Privacy Policy<br>Refund Policy<br>Terms of Use</p>
+    </div>
+    <div class="footer-column">
+      <h4>Contact</h4>
+      <p>support@fragranza.in<br>+91 12345 67890</p>
+    </div>
+    <div class="footer-column">
+      <h4>Social</h4>
+      <p>Instagram<br>Facebook<br>X (Twitter)</p>
+    </div>
+  </footer>
+
+</body>
+</html>

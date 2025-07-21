@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fragranzia - Checkout</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f7fa;
+      margin: 0;
+      padding: 0;
+    }
+
+   
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 16px 24px;
+      background-color: white;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #003049;
+    }
+
+    .nav-links a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #003049;
+      font-weight: 500;
+    }
+
+    /* Container */
+    .container {
+      max-width: 1200px;
+      margin: 30px auto;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .left-section {
+      flex: 2;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .right-section {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .card {
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+    }
+
+    .product-summary {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .product-summary img {
+      width: 100px;
+      border-radius: 8px;
+    }
+
+    .product-info {
+      flex: 1;
+    }
+
+    .product-info h3 {
+      margin: 0;
+      font-size: 18px;
+    }
+
+    .rating {
+      color: green;
+      font-size: 14px;
+    }
+
+    .price-block {
+      margin-top: 8px;
+      font-size: 16px;
+    }
+
+    .price-block .old-price {
+      text-decoration: line-through;
+      color: #888;
+      margin-left: 10px;
+    }
+
+    .quantity-selector {
+      margin-top: 10px;
+    }
+
+    .quantity-selector button {
+      width: 30px;
+      height: 30px;
+      font-size: 18px;
+    }
+
+    .delivery-note {
+      font-size: 14px;
+      color: #444;
+      margin-top: 10px;
+    }
+
+    .green-text {
+      color: green;
+    }
+
+    .section-title {
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .address-tabs button {
+      margin-right: 10px;
+      padding: 6px 12px;
+      border: none;
+      background: #f0f0f0;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    .address-tabs .active {
+      background-color: #003049;
+      color: white;
+    }
+
+    .address-box {
+      margin-top: 10px;
+      padding: 10px;
+      background: #f9f9f9;
+      border-radius: 8px;
+      font-size: 14px;
+    }
+
+    .price-summary, .payment-methods {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+    }
+
+    .price-summary table {
+      width: 100%;
+      font-size: 15px;
+    }
+
+    .price-summary td {
+      padding: 6px 0;
+    }
+
+    .price-summary .total {
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    .payment-methods label {
+      display: block;
+      margin: 10px 0;
+    }
+
+    .payment-methods input {
+      margin-right: 10px;
+    }
+
+    .pay-btn {
+      margin-top: 20px;
+      padding: 12px;
+      background-color: #003049;
+      color: white;
+      font-size: 16px;
+      border: none;
+      width: 100%;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="logo">Fragranzia</div>
+  <div class="nav-links">
+    <a href="#">Home</a>
+    <a href="#">Products</a>
+    <a href="#">Gifting</a>
+    <a href="#">About</a>
+    <a href="#">Cart</a>
+  </div>
+</nav>
+
+<div class="container">
+
+  <div class="left-section">
+
+    <div class="card">
+      <div class="product-summary">
+        <img src="Screenshot 2025-07-09 172847.png" alt="Perfume">
+        <div class="product-info">
+          <h3>Autograph Eau De Parfum 100ml for Men</h3>
+          <div class="rating">⭐ 4.5</div>
+          <div class="quantity-selector">
+            <button>-</button> <span>1</span> <button>+</button>
+          </div>
+          <div class="price-block">
+            ₹899 <span class="old-price">₹2000</span> <span class="green-text">61% off</span>
+          </div>
+          <div class="delivery-note">
+            Delivered by August 29, <span class="green-text">Free delivery</span><br>
+            <span class="green-text">7 day return policy</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="section-title">Personal Details</div>
+      <div class="address-tabs">
+        <button>Add address +</button>
+        <button class="active">Home</button>
+        <button>Office</button>
+      </div>
+      <div class="address-box">
+        <strong>Rohan Jaison</strong><br>
+        Apartment No. 104, Emerald Heights Opposite Lulu Mall Edappally,<br>
+        Kochi Kerala 682024<br><br>
+        +91 9876543210
+      </div>
+    </div>
+
+  </div>
+
+  <div class="right-section">
+
+    <div class="price-summary">
+      <div class="section-title">Price Details</div>
+      <table>
+        <tr><td>Price (1 item)</td><td align="right">₹899 <span class="old-price">₹2000</span></td></tr>
+        <tr><td>Discount (61%)</td><td align="right">₹1101</td></tr>
+        <tr><td>Delivery Charge</td><td align="right" class="green-text">Free Delivery</td></tr>
+        <tr><td class="total">Total Amount</td><td align="right" class="total">₹899</td></tr>
+      </table>
+    </div>
+
+
+    <div class="payment-methods">
+      <div class="section-title">Payment Methods</div>
+      <label><input type="radio" name="pay" checked> Google Pay</label>
+      <label><input type="radio" name="pay"> Cash on delivery (cash/UPI)</label>
+      <label><input type="radio" name="pay"> Paytm/Phone Pay/Amazon Pay etc</label>
+      <label><input type="radio" name="pay"> Credit/Debit card</label>
+      <label><input type="radio" name="pay"> Net Banking</label>
+
+      <button class="pay-btn">Pay Now</button>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

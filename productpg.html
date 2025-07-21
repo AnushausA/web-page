@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Fragranzia - All Products</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background: #f8f9fb;
+      margin: 0;
+      padding: 0;
+    }
+
+    
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px 20px;
+      background: white;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      flex-wrap: wrap;
+    }
+
+    nav .logo {
+      font-weight: bold;
+      font-size: 24px;
+      color: #003049;
+    }
+
+    nav .menu-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      justify-content: flex-end;
+    }
+
+    nav .menu-links a {
+      text-decoration: none;
+      color: #003049;
+      font-weight: 500;
+      font-size: 14px;
+      transition: color 0.2s;
+    }
+
+    nav .menu-links a:hover {
+      color: #0077b6;
+    }
+
+    /* Offer Banner */
+    header {
+      background-color: #003049;
+      color: white;
+      padding: 10px 20px;
+      text-align: center;
+      font-size: 16px;
+    }
+
+    h2 {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    /* Product Grid */
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .product-card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+      text-align: center;
+      padding: 15px;
+    }
+
+    .product-card img {
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+      object-fit: contain;
+      margin-bottom: 10px;
+    }
+
+    .product-name {
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .product-desc {
+      font-size: 14px;
+      color: #555;
+      margin-bottom: 10px;
+    }
+
+    .price {
+      margin-bottom: 10px;
+    }
+
+    .original-price {
+      text-decoration: line-through;
+      color: #888;
+      margin-right: 5px;
+    }
+
+    .discounted-price {
+      color: #000;
+      font-weight: bold;
+    }
+
+    .add-to-cart {
+      background-color: #003049;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .add-to-cart:hover {
+      background-color: #00577f;
+    }
+
+    .load-more {
+      display: block;
+      margin: 20px auto;
+      padding: 10px 20px;
+      background: transparent;
+      border: 2px solid #003049;
+      color: #003049;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    footer {
+      background-color: #d3e8f1;
+      padding: 30px 20px;
+      font-size: 14px;
+      color: #003049;
+    }
+
+    footer .container {
+      max-width: 1200px;
+      margin: auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    footer .section {
+      margin: 10px 0;
+      min-width: 150px;
+    }
+
+    footer h4 {
+      margin-bottom: 10px;
+      font-size: 16px;
+    }
+
+    footer a {
+      display: block;
+      color: #003049;
+      text-decoration: none;
+      margin-bottom: 5px;
+    }
+
+    footer .bottom-bar {
+      text-align: center;
+      margin-top: 20px;
+      border-top: 1px solid #ccc;
+      padding-top: 10px;
+      font-size: 12px;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Top Navigation -->
+<nav>
+  <div class="logo">Fragranzia</div>
+  <div class="menu-links">
+    <a href="#">Home</a>
+    <a href="#">Products</a>
+    <a href="#">Gifting</a>
+    <a href="#">Combos</a>
+    <a href="#">New Arrivals</a>
+    <a href="#">About</a>
+    <a href="#">Profile</a>
+    <a href="#">Track Order</a>
+    <a href="#">Wishlist</a>
+    <a href="#">Cart</a>
+  </div>
+</nav>
+
+<!-- Offer Bar -->
+<header>
+  ENJOY FESTIVE DISCOUNTS! FREE SHIPPING ABOVE ₹999!
+</header>
+
+<!-- Page Title -->
+<h2>All Products</h2>
+
+<!-- Product Grid -->
+<div class="product-grid">
+
+  <div class="product-card">
+    <img src="Screenshot 2025-07-09 172847.png" alt="Kyros Red Perfume">
+    <div class="product-name">Kyros Eau De Parfum</div>
+    <div class="product-desc">100ml For Men</div>
+    <div class="price">
+      <span class="original-price">₹2900</span>
+      <span class="discounted-price">₹899</span>
+    </div>
+    <button class="add-to-cart">Add to Cart</button>
+  </div>
+
+  <div class="product-card">
+    <img src="Screenshot 2025-07-09 173100.png" alt="Kyros White Perfume">
+    <div class="product-name">Kyros Eau De Parfum</div>
+    <div class="product-desc">100ml For Men</div>
+    <div class="price">
+      <span class="original-price">₹2600</span>
+      <span class="discounted-price">₹899</span>
+    </div>
+    <button class="add-to-cart">Add to Cart</button>
+  </div>
+
+  <div class="product-card">
+    <img src="Screenshot 2025-07-09 173240.png" alt="Kyros Black Perfume">
+    <div class="product-name">Kyros Eau De Parfum</div>
+    <div class="product-desc">100ml For Men</div>
+    <div class="price">
+      <span class="original-price">₹2900</span>
+      <span class="discounted-price">₹899</span>
+    </div>
+    <button class="add-to-cart">Add to Cart</button>
+  </div>
+
+</div>
+
+<!-- Load More Button -->
+<button class="load-more">Load More</button>
+
+<!-- Footer -->
+<footer>
+  <div class="container">
+    <div class="section">
+      <h4>Pages</h4>
+      <a href="#">Home</a>
+      <a href="#">Products</a>
+      <a href="#">Gifting</a>
+      <a href="#">About</a>
+      <a href="#">Profile</a>
+    </div>
+    <div class="section">
+      <h4>Quick Links</h4>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms and Conditions</a>
+      <a href="#">FAQs</a>
+      <a href="#">Customer Service</a>
+    </div>
+    <div class="section">
+      <h4>Contact</h4>
+      <p>fragrantianew@gmail.com</p>
+      <p>+91 9876543210</p>
+      <h4>Social Media</h4>
+       <i class="fab fa-instagram"></i>
+          <i class="fab fa-facebook"></i>
+          <i class="fab fa-x-twitter"></i>
+          <i class="fab fa-youtube"></i>
+          <i class="fab fa-linkedin"></i>
+    </div>
+  </div>
+  <div class="bottom-bar">
+    © 2024 Fragranzia Company. All rights reserved. | Privacy Statement | Terms of Use | Contact Us
+  </div>
+</footer>
+
+</body>
+</html>

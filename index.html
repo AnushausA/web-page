@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sign Up</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      height: 100vh;
+      justify-content: center;
+      align-items: center;
+      background-color: #f3f3f3;
+    }
+
+    .container {
+      display: flex;
+      width: 850px;
+      height: 500px;
+      border-radius: 50px;
+      overflow: hidden;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      background-color: white;
+    }
+
+    .left {
+      flex: 1;
+      position: relative;
+      background: url('img.avif') no-repeat center center;
+      background-size: cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      border-top-left-radius: 50px;
+      border-bottom-left-radius: 50px;
+      overflow: hidden; /* Clip the child overlay */
+    }
+
+    .left::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .left div {
+      position: relative;
+      z-index: 1;
+    }
+
+    .left h2 {
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+
+    .left p {
+      font-size: 16px;
+      color: #ddd;
+    }
+
+    .right {
+      flex: 1;
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    input, button {
+      margin: 8px 0;
+      padding: 12px;
+      width: 100%;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 14px;
+    }
+
+    button {
+      background-color: #004d4d;
+      color: white;
+      border: none;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .social {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 15px;
+    }
+
+    .social button {
+      background: #f0f0f0;
+      color: black; /* black text */
+      border: 1px solid #ccc;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .social button:hover {
+      background-color: #ddd;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="left">
+      <div>
+        <h2>LET’S GET STARTED</h2>
+        <p>Join now to access your dashboard</p>
+      </div>
+    </div>
+
+    <div class="right">
+      <div class="social">
+        <button>Google</button>
+        <button>Facebook</button>
+      </div>
+      <input type="text" placeholder="Full Name">
+      <input type="email" placeholder="Email">
+      <input type="tel" placeholder="Phone">
+      <input type="password" placeholder="Password">
+      <input type="password" placeholder="Confirm Password">
+      <button>SIGN UP</button>
+    </div>
+  </div>
+
+</body>
+</html>
